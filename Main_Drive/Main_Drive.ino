@@ -1036,16 +1036,15 @@ void bodyCalib()
     #else
     int domeTiltFR = 0;
     #endif
-
     if (sendToRemote.bodyStatus == BodyStatus::NormalOperation
-        && button8Handler.GetState() == ButtonState::Held
+        && button8Handler.GetState() == ButtonState::Pressed
         && button7Handler.GetState() == ButtonState::NotPressed
         && recFromRemote.motorEnable == 1)
     {
         sendToRemote.bodyStatus = BodyStatus::BodyCalibration;
     }
     else if (sendToRemote.bodyStatus == BodyStatus::BodyCalibration
-        && button8Handler.GetState() == ButtonState::Pressed)
+        && button8Handler.GetState() == ButtonState::Held)
     {
         offsets.UpdateOffsets(
             imu.Pitch(),

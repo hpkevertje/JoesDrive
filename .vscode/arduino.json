@@ -1,5 +1,7 @@
 {
-    "port": "COM4",
-    "board": "adafruit:avr:feather32u4",
-    "sketch": "MK3_Remote\\MK3_Remote.ino"
+    "port": "COM13",
+    "board": "arduino:avr:mega",
+    "sketch": "Main_Drive\\Main_Drive.ino",
+    "configuration": "cpu=atmega2560",
+    "programmer": "arduino:avrisp"
 }

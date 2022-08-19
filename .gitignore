@@ -33,3 +33,7 @@ Main_Drive/*.hex
 *.exe
 *.out
 *.app
+
+#visual studio code files
+arduino.json
+c_cpp_properties.json
