@@ -86,7 +86,7 @@
 // Naigon: Amount to limit the flywheel.
 #define MaxFlywheelDrive 255
 
-#define MaxDomeSpin 255
+#define MaxDomeSpin 192
 
 //
 // Naigon: Amount that dome can spin when in servo mode. This was hardcoded inline before; I refactored to a constant
