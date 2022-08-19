@@ -62,17 +62,17 @@ SSD1306AsciiWire oled;
 //*********************************************************************************************
 // *********** IMPORTANT SETTINGS - YOU MUST CHANGE/CONFIGURE TO FIT YOUR HARDWARE ************
 //*********************************************************************************************
-#define NETWORKID       100  // The same on all nodes that talk to each other
-#define REMOTE_ADDRESS  1    // The unique identifier of this node
-#define BODY_ADDRESS    2    // The recipient of packets
-#define DOME_ADDRESS    3    // The recipient of packets
-#define DRIVE_ADDRESS   4
+#define NETWORKID       117   // The same on all nodes that talk to each other
+#define REMOTE_ADDRESS  17    // The unique identifier of this node
+#define BODY_ADDRESS    18    // The recipient of packets
+#define DOME_ADDRESS    19    // The recipient of packets
+#define DRIVE_ADDRESS   20
 
 // Naigon - Visual Studio Code
 //
 // This is just to make the VS Code IDE happy
-#ifndef RF69_915MHZ
-#define RF69_915MHZ 91
+#ifndef RF69_433MHZ
+#define RF69_433MHZ 91
 #endif
 
 //Match frequency to the hardware version of the radio on your Feather

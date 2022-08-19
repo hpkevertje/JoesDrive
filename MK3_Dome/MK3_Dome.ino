@@ -35,13 +35,13 @@
 //*********************************************************************************************
 // *********** IMPORTANT SETTINGS - YOU MUST CHANGE/CONFIGURE TO FIT YOUR HARDWARE ************
 //*********************************************************************************************
-#define NETWORKID 100    // The same on all nodes that talk to each other
-#define REMOTE_ADDRESS 1 // The unique identifier of this node
-#define BODY_ADDRESS 2   // The recipient of packets
-#define DOME_ADDRESS 3   // The recipient of packets
-#define DRIVE_ADDRESS 4
+#define NETWORKID 117     // The same on all nodes that talk to each other
+#define REMOTE_ADDRESS 17 // The unique identifier of this node
+#define BODY_ADDRESS 18   // The recipient of packets
+#define DOME_ADDRESS 19   // The recipient of packets
+#define DRIVE_ADDRESS 20
 
-#define FREQUENCY RF69_915MHZ // THIS NEEDS TO MATCH YOUR FEATHER
+#define FREQUENCY RF69_433MHZ // THIS NEEDS TO MATCH YOUR FEATHER
 
 #define IS_RFM69HCW true // set to 'true' if you are using an RFM69HCW module
 
