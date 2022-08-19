@@ -76,7 +76,7 @@ SSD1306AsciiWire oled;
 #endif
 
 //Match frequency to the hardware version of the radio on your Feather
-#define FREQUENCY     RF69_915MHZ
+#define FREQUENCY     RF69_433MHZ
 #define IS_RFM69HCW   true // set to 'true' if you are using an RFM69HCW module
 
 //*********************************************************************************************
@@ -224,7 +224,7 @@ void setup()
     oled.setFont(Callibri15);
     oled.println(F("==========================="));
     oled.println(F("            Joe's Drive       "));
-    oled.println(F("        Naigon Edition"));
+    oled.println(F("              Hans' BB8"));
     oled.println(F("==========================="));
     Serial.begin(115200);
   
