@@ -93,7 +93,7 @@
 // for ease of tuning.
 //
 // Joe's default is 70.
-#define MaxDomeSpinServo 80
+#define MaxDomeSpinServo 70
 
 #define MaxDomeSpinAuto 255 * 2 / 3
 #define MaxDomeServoAuto MaxDomeSpinServo
@@ -220,9 +220,9 @@
 // The following values need tuning if moving to the MK3 flywheel.
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const double Pk1 = 12.0; // Joe's 13
-const double Ik1 =  0.05; // Joe's 0
+const double Ik1 =  0; // Joe's 0
 // Naigon - Change this value from .3 to .1 or 0 to remove shakey side to side
-const double Dk1 =  0.25;
+const double Dk1 =  0;
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -231,9 +231,9 @@ const double Dk1 =  0.25;
 //
 // The following values need tuning if moving to the MK3 flywheel.
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const double Pk2 = 0.35; // Joe 0.5; M2 Flywheel .4
+const double Pk2 = 0.4; // Joe 0.5; M2 Flywheel .4
 const double Ik2 = 0.00; // was .00
-const double Dk2 = 0.05; // was .01
+const double Dk2 = 0.00; // was .01
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -250,7 +250,7 @@ const double Dk3 = 0.00;
 // PID4 is for dome tilt fwd/back
 // Naigon - adjust for pid dome tilt control
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const double Pk4 = 3.75; // default is 6
+const double Pk4 = 6; // default is 6
 const double Ik4 = 0.00; // default is 0
 const double Dk4 = 0.00;
 
