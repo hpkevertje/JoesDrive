@@ -179,14 +179,14 @@ RFM69 radio = RFM69(RFM69_CS, RFM69_IRQ, IS_RFM69HCW, RFM69_IRQN);
 // calibrating the joystick centers. This simplifies the business logic, adhering to my
 // goal of the remote being a light-weight client.
 //
-const int JoyLow = 0;
-const int JoyHigh = 1023;
+const int JoyLow = 8;
+const int JoyHigh = 1024;
 
 // Naigon - MK3 Head Tilt
 // To avoid having the user need to wiggle the back joysticks as part of the calibration,
 // I took an average of my two sticks output here to get this value.
-const int PSPLow = (115 * 2);
-const int PSPHigh = 1023 - (115 * 2);
+const int PSPLow = 400;
+const int PSPHigh = 750;
 
 bool SEND;
 int Joy1X, Joy1Xa, Joy1Xb;
@@ -746,6 +746,9 @@ void debugRoutine()
     Serial.print(sendToBody.but6); Serial.print(", ");
     Serial.print(sendToBody.but7); Serial.print(", ");
     Serial.print(sendToBody.but8); Serial.print(", ");
+    Serial.print(sendToBody.but8); Serial.print(", ");
+    Serial.print(Joy3XCenter); Serial.print(", ");
+    Serial.print(Joy4XCenter); Serial.print(", ");
     Serial.print(sendToBody.motorEnable);
     Serial.println();
 }

@@ -210,19 +210,19 @@ AnalogInHandler driveStickHandlerMed(0, 512, reverseDrive, -MaxDriveMed, MaxDriv
 AnalogInHandler driveStickHandlerFast(0, 512, reverseDrive, -MaxDriveFast, MaxDriveFast, 2.0f);
 AnalogInHandler sideToSideStickHandler(0, 512, reverseS2S, -MaxSideToSide, MaxSideToSide, 2.0f);
 #if HeadTiltVersion == MK2_Dome
-AnalogInHandler domeTiltStickHandler(0, 512, reverseDomeTilt, -MaxDomeTiltAngle, MaxDomeTiltAngle, 2.0f);
+AnalogInHandler domeTiltStickHandler(0, 512, reverseDomeTilt, -MaxDomeTiltAngle, MaxDomeTiltAngle, 5.0f);
 #else
-AnalogInHandler domeTiltStickHandlerFR(0, 512, reverseDomeTiltFR, -MaxDomeTiltY, MaxDomeTiltY, 2.0f);
+AnalogInHandler domeTiltStickHandlerFR(0, 512, reverseDomeTiltFR, -MaxDomeTiltY, MaxDomeTiltY, 5.0f);
 #endif
-AnalogInHandler domeTiltStickHandlerLR(0, 512, reverseDomeTiltLR, -MaxDomeTiltX, MaxDomeTiltX, 2.0f);
-AnalogInHandler domeSpinStickHandler(0, 512, reverseDomeSpin, -MaxDomeSpin, MaxDomeSpin, 15.0f);
-AnalogInHandler domeSpinAutoStickHandler(0, 512, reverseDomeSpin, -MaxDomeSpinAuto, MaxDomeSpinAuto, 15.0f);
-AnalogInHandler domeServoStickHandler(0, 512, reverseDomeSpin, -MaxDomeSpinServo, MaxDomeSpinServo, 15.0f);
-AnalogInHandler domeServoAutoStickHandler(0, 512, reverseDomeSpin, -MaxDomeServoAuto, MaxDomeServoAuto, 15.0f);
-AnalogInHandler flywheelStickHandler(0, 512, reverseFlywheel, -MaxFlywheelDrive, MaxFlywheelDrive, 10.0f);
+AnalogInHandler domeTiltStickHandlerLR(0, 512, reverseDomeTiltLR, -MaxDomeTiltX, MaxDomeTiltX, 5.0f);
+AnalogInHandler domeSpinStickHandler(0, 512, reverseDomeSpin, -MaxDomeSpin, MaxDomeSpin, 30.0f);
+AnalogInHandler domeSpinAutoStickHandler(0, 512, reverseDomeSpin, -MaxDomeSpinAuto, MaxDomeSpinAuto, 30.0f);
+AnalogInHandler domeServoStickHandler(0, 512, reverseDomeSpin, -MaxDomeSpinServo, MaxDomeSpinServo, 30.0f);
+AnalogInHandler domeServoAutoStickHandler(0, 512, reverseDomeSpin, -MaxDomeServoAuto, MaxDomeServoAuto, 30.0f);
+AnalogInHandler flywheelStickHandler(0, 512, reverseFlywheel, -MaxFlywheelDrive, MaxFlywheelDrive, 30.0f);
 // Pots
 AnalogInHandler sideToSidePotHandler(0, 1024, reverseS2SPot, -MaxS2SPot, MaxS2SPot, 0.0f);
-AnalogInHandler domeSpinPotHandler(0, 1024, reverseDomeSpinPot, -MaxDomeSpinPot, MaxDomeSpinPot, 0.0f);
+AnalogInHandler domeSpinPotHandler(0, 1024, reverseDomeSpinPot, -MaxDomeSpinPot, MaxDomeSpinPot, 5.0f);
 #if HeadTiltVersion == MK2_Dome
 AnalogInHandler domeTiltPotHandler(0, 1024, reverseDomeTiltPot, -MaxHeadTiltPot, MaxHeadTiltPot, 0.0f);
 #endif
